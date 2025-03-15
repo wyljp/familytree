@@ -49,7 +49,7 @@ NEXT_PUBLIC_FAMILY_NAME=白
 
 ### 添加家族数据
 
-1. 在 `config` 目录中创建您的家族数据文件，可以参考 `family-data.example.json` 或 `family-data-bai.json`。
+1. 在 `config` 目录中创建您的家族数据文件`family-data.json`，可以参考 `family-data.example.json` 或 `family-data.json`。
 
 2. 按照以下格式添加您的家族成员信息：
 
@@ -137,7 +137,6 @@ bun dev
 
 ## 自定义与扩展
 
-- 修改 `app/page.tsx` 自定义首页内容
 - 调整 `config/family-data.json` 中的数据文件更新家族信息
 - 编辑 `.env.local` 文件更改配置和验证方式
 
@@ -152,7 +151,7 @@ bun dev
 
 ## 相关服务
 
-�� **[www.fatemaster.ai](https://www.fatemaster.ai)** - AI八字算命网站，提供智能化命理分析服务，帮助您了解先祖的命运与传承。
+**[FateMaster.AI](https://www.fatemaster.ai)** - AI八字算命网站，提供智能化命理分析服务。
 
 ## 贡献
 
