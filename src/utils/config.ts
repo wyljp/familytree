@@ -53,7 +53,7 @@ async function loadConfigOnServer<T>(filename: string, defaultConfig: T): Promis
 // 从环境变量读取服务器端认证配置
 function getAuthConfigOnServerFromEnv(): AuthConfig {
   return {
-    requireAuth: process.env.REQUIRE_AUTH === 'true',
+    requireAuth: process.env.NEXT_PUBLIC_REQUIRE_AUTH === 'true',
     authMode: (process.env.AUTH_MODE as 'all' | 'specific') || 'specific',
     specificName: process.env.SPECIFIC_NAME || '',
     familyName: process.env.NEXT_PUBLIC_FAMILY_NAME || '姓氏'
@@ -64,7 +64,7 @@ function getAuthConfigOnServerFromEnv(): AuthConfig {
 function getPublicConfigFromEnv(): PublicConfig {
   return {
     familyName: process.env.NEXT_PUBLIC_FAMILY_NAME || '姓氏',
-    isAuthRequired: true // 默认总是需要认证，具体细节由服务器端判断
+    isAuthRequired: process.env.NEXT_PUBLIC_REQUIRE_AUTH === 'true'
   };
 }
 
