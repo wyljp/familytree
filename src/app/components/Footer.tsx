@@ -27,7 +27,7 @@ const Footer = () => {
             </p>
             <p className="text-sm leading-6 text-gray-600">
               <Link 
-                href="https://github.com/jiujiaoxieeba/familytree" 
+                href="https://github.com/qiaoshouqing/familytree" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 hover:underline"
