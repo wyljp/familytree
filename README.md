@@ -45,6 +45,9 @@ SPECIFIC_NAME=白景琦
 
 # 姓氏配置（用于网站标题、描述和页脚）
 NEXT_PUBLIC_FAMILY_NAME=白
+
+# 应用端口号配置
+PORT=3000
 ```
 
 ### 添加家族数据
