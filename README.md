@@ -1,4 +1,4 @@
-# 家族谱 (Family Tree)
+# 家族族谱 (Family Tree)
 
 这是一个基于 [Next.js](https://nextjs.org) 开发的家族谱展示项目，可以用来展示和管理您的家族历史和成员关系。
 
