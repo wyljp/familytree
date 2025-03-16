@@ -66,7 +66,9 @@ PORT=3000
           "id": "person-id",
           "name": "姓名",
           "info": "人物描述",
-          "fatherId": "父亲ID"
+          "fatherId": "父亲ID",
+          "birthYear": 1900,
+          "deathYear": 1980
         }
       ]
     }
@@ -79,6 +81,8 @@ PORT=3000
 - `name`: 姓名
 - `info`: 个人描述、生平简介等
 - `fatherId`: 父亲的ID，用于建立代际关系
+- `birthYear`: 出生年份（可选）
+- `deathYear`: 逝世年份（可选）
 
 ### 运行项目
 
@@ -113,7 +117,8 @@ bun dev
         {
           "id": "ancestor",
           "name": "始祖",
-          "info": "家族创始人，生于1850年"
+          "info": "家族创始人，生于1850年",
+          "birthYear": 1850
         }
       ]
     },
@@ -124,13 +129,17 @@ bun dev
           "id": "second-gen-1",
           "name": "长子",
           "info": "生于1880年，妻王氏",
-          "fatherId": "ancestor"
+          "fatherId": "ancestor",
+          "birthYear": 1880,
+          "deathYear": 1950
         },
         {
           "id": "second-gen-2",
           "name": "次子",
           "info": "生于1885年，妻李氏",
-          "fatherId": "ancestor"
+          "fatherId": "ancestor",
+          "birthYear": 1885,
+          "deathYear": 1960
         }
       ]
     }
@@ -156,7 +165,9 @@ bun dev
           "id": "唯一标识符",
           "name": "姓名",
           "info": "详细信息",
-          "fatherId": "父亲ID"
+          "fatherId": "父亲ID",
+          "birthYear": 出生年份,
+          "deathYear": 逝世年份
         }
       ]
     }
@@ -167,22 +178,14 @@ bun dev
 1. 为每个人物生成唯一的id（如first-gen-1, second-gen-2等）
 2. 正确设置fatherId以建立父子关系
 3. 将人物按世代归类
-4. 在info字段包含生卒年月、配偶、事迹等信息
-5. 确保JSON格式有效且可直接导入系统使用
+4. 在info字段包含配偶、事迹等信息
+5. 使用birthYear和deathYear分别记录出生和逝世年份（若有）
+6. 确保JSON格式有效且可直接导入系统使用
 ```
 
 3. 将AI生成的JSON复制到`config/family-data.json`文件中
 4. 检查并调整生成的数据，确保关系准确、格式正确
 
-示例提示：
-```
-我要整理以下家族信息为JSON格式：
-李大山，始祖，生于1900年，卒于1980年，妻张氏。
-李小明，大山长子，生于1930年，妻王氏。
-李小红，大山次子，生于1935年，妻赵氏。
-李强，小明之子，生于1960年。
-李勇，小红之子，生于1965年。
-```
 
 这种方式可以快速将非结构化的家族信息转换为系统所需的JSON格式，尤其适合数据量较大的情况。
 

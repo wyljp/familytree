@@ -7,7 +7,9 @@
           "id": "person-id",
           "name": "姓名",
           "info": "人物描述",
-          "fatherId": "父亲ID"
+          "fatherId": "父亲ID",
+          "birthYear": 1900,
+          "deathYear": 1980
         }
       ]
     }
