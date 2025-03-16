@@ -61,7 +61,7 @@ const Footer = () => {
         {/* 底部版权信息 */}
         <div className="mt-8 border-t border-gray-200 pt-6">
           <p className="text-xs leading-5 text-gray-500 text-center">
-            &copy; {new Date().getFullYear()} {familyFullName}族谱 - MIT开源协议
+            &copy; {new Date().getFullYear()} 家族谱系项目 - MIT开源协议
           </p>
         </div>
       </div>
