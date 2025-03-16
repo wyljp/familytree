@@ -2,6 +2,10 @@
 
 这是一个基于 [Next.js](https://nextjs.org) 开发的家族谱展示项目，可以用来展示和管理您的家族历史和成员关系。
 
+## 演示网站
+
+您可以通过访问 [https://familytree.pomodiary.com/](https://familytree.pomodiary.com/) 查看本项目的在线演示。
+
 ## 功能特点
 
 - 多代家族成员的可视化展示
